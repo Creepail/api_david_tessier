@@ -10,3 +10,13 @@ fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=4f2f4ee4c522424a92ab42a
     })
 
 })
+
+const audioPlayer = document.querySelector('audio')
+const btnAudio = document.querySelector('button')
+
+audioPlayer.volume = 0.5;
+
+
+btnAudio.addEventListener('click', function(){
+    audioPlayer.play()
+})
