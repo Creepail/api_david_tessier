@@ -16,7 +16,12 @@ const btnAudio = document.querySelector('button')
 
 audioPlayer.volume = 0.5;
 
+audioPlayer.addEventListener('ended', function(){
+    this.currentTime = 0;
+}, false);
 
-btnAudio.addEventListener('click', function(){
+
+
+function startAudio(){
     audioPlayer.play()
-})
+}

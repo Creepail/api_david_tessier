@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TerraWeather</title>
     <link rel="icon" href="img/terraria-logo.webp">
+    <link rel="stylesheet" href="scss/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
 </head>
 <body>
 
     
+<section>
 
-    <audio id="player" autoplay ><source src="music/Windy Day Spoiler.mp3" type="audio/mp3"></audio>
-        <button>click me to start !</button>
+    <h1>TerraWeather</h1>
+    <p onclick="startAudio()">Give me my music !</p>
+
+
+</section>
+
+
+    <audio id="player" loop ><source src="music/Windy Day Spoiler.mp3" type="audio/mp3"></audio>
+    <button>click me to start !</button>
 
     
     <script src="main.js"></script>
