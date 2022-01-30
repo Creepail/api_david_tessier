@@ -160,9 +160,6 @@ function seeWorldEvil(){
         + polutionInfo.list[0].components.nh3 + '<br> no: '  
         + polutionInfo.list[0].components.no + '<br> no2: '  
         + polutionInfo.list[0].components.no2 + '<br> o3: '  
-        + polutionInfo.list[0].components.o3 + '<br> pm2_5: '  
-        + polutionInfo.list[0].components.pm2_5 + '<br> pm10: '  
-        + polutionInfo.list[0].components.pm10 + '<br> so2: '  
         + polutionInfo.list[0].components.so2 + 
         '</p>' + '<h1>'+ locationInfo.city +'</h1>' 
 
