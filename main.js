@@ -186,3 +186,5 @@ function reloadWeather(){
 }
 
 reloadWeather()
+
+window.onload(alert("This website will geolocate you, please leave if you don't want that to happen"))
