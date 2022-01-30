@@ -187,4 +187,21 @@ function reloadWeather(){
 
 reloadWeather()
 
+
 alert("This website will geolocate you, please leave if you don't want that to happen")
+
+let audioStatus = true
+
+function mute(){
+if (audioStatus == true){
+    audioPlayer.muted = true;
+    audioStatus = false;
+} else if (audioStatus == false){
+    audioPlayer.muted = false;
+    audioStatus = true;
+    reloadAudio()
+}
+
+
+
+}
