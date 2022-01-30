@@ -187,3 +187,5 @@ function reloadWeather(){
         reloadWeather()
       }, 300000);
 }
+
+reloadWeather()
