@@ -3,7 +3,6 @@ let dataContainer = document.querySelector('.dataContainer')
 const audioPlayer = document.querySelector('audio')
 let startMenu = document.querySelector('.menu')
 let time = document.querySelector('.time')
-console.log(time)
 let audioSource = ''
 let timeToUpdate
 let locationInfo 
@@ -17,7 +16,7 @@ async function checkWeather(){
         fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + locationData.latitude + '&lon=' + locationData.longitude +'&appid=1f841ee1973683bd7f799d206838eb20&units=metric')
         .then(response => response.json())
         .then(WeatherData => {
-            console.log(WeatherData)
+           
 
             if(WeatherData.wind.speed >= 15){
                 audioSource = 'music/windy.mp3'
@@ -50,7 +49,7 @@ async function checkWeather(){
         })
         timeToUpdate = locationData.timezone.current_time.split(":")
 
-        console.log(audioSource)
+       
 
     })
 }
@@ -167,10 +166,6 @@ function seeWorldEvil(){
         + polutionInfo.list[0].components.so2 + 
         '</p>' + '<h1>'+ locationInfo.city +'</h1>' 
 
-
-
-
-        console.log(polutionInfo)
         screenType = 1
     })
 
