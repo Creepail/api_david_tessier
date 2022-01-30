@@ -44,7 +44,7 @@ async function checkWeather(){
                 reloadAudio()
             }
 
-            dataContainer.innerHTML = '<p class="time"></p>' + '<p>'+ 'Current Weather : ' + WeatherData.weather[0].description  +'</p>' + '<p>'+ WeatherData.main.feels_like +' *C</p>'   + '<h1>'+ locationData.city +'</h1>'
+            dataContainer.innerHTML = '<p class="time"></p>' + '<p>'+ 'Current Weather : ' + WeatherData.weather[0].description  +'</p>' + '<p>'+ WeatherData.main.feels_like +' *C</p>'   + '<h1>'+ locationData.city +'</h1>' + '<img src="img/terraweather.png" alt="terraweatherLogo">'
 
         })
         timeToUpdate = locationData.timezone.current_time.split(":")
@@ -134,24 +134,24 @@ function seeWorldEvil(){
 
 
         if(polutionInfo.list[0].main.aqi == 1 ){
-            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 20% corrupted (air quality is good)</p>'
+            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 20% corrupted (air quality is good)</p>' + '<img src="img/terraweather.png" alt="terraweatherLogo">'
 
         }
         else if(polutionInfo.list[0].main.aqi == 2 ){
-            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 40% corrupted (air quality is fair)</p>' 
+            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 40% corrupted (air quality is fair)</p>' + '<img src="img/terraweather.png" alt="terraweatherLogo">' 
 
         }
 
         else if(polutionInfo.list[0].main.aqi == 3 ){
-            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 60% corrupted (air quality is moderate)</p>' 
+            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 60% corrupted (air quality is moderate)</p>' + '<img src="img/terraweather.png" alt="terraweatherLogo">' 
 
         }
         else if(polutionInfo.list[0].main.aqi == 4 ){
-            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 80% corrupted (air quality is poor)</p>' 
+            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 80% corrupted (air quality is poor)</p>' + '<img src="img/terraweather.png" alt="terraweatherLogo">' 
 
         }
         else if(polutionInfo.list[0].main.aqi == 5 ){
-            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 100% corrupted (air quality is very poor)</p>' 
+            dataContainer.innerHTML = '<p class="time"></p>' + '<p>Your world is 100% corrupted (air quality is very poor)</p>'  + '<img src="img/terraweather.png" alt="terraweatherLogo">'
 
         }
 
