@@ -179,3 +179,11 @@ function seeWorldEvil(){
     }
 
 }
+
+
+function reloadWeather(){
+    setTimeout(function (){
+        checkWeather()
+        reloadWeather()
+      }, 300000);
+}
