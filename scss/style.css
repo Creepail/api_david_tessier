@@ -16,7 +16,8 @@
   align-items: center;
   background-color: #57d057;
   font-family: 'Roboto', sans-serif;
-  color: white; }
+  color: white;
+  z-index: 20; }
   .menu h1 {
     font-size: 100px;
     pointer-events: none; }
@@ -38,9 +39,12 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s; }
   .background div {
     background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
     width: fit-content;
     height: fit-content;
     font-family: terraria, sans-serif;
@@ -51,10 +55,21 @@
     flex-direction: column-reverse; }
     .background div h1 {
       font-size: 100px;
-      padding: 80px; }
+      padding: 20px; }
     .background div p {
-      font-size: 50px;
+      font-size: 25px;
       text-align: center;
-      padding: 80px; }
+      padding: 20px; }
+    .background div img {
+      position: absolute;
+      top: -30%;
+      width: 700px; }
+  .background .dataContainer {
+    margin-bottom: 50px; }
+  .background .worldEvil {
+    border-radius: 40px;
+    cursor: pointer; }
+    .background .worldEvil p {
+      pointer-events: none; }
 
 /*# sourceMappingURL=style.css.map */
