@@ -41,8 +41,8 @@
   align-items: center; }
   .background div {
     background-color: rgba(0, 0, 0, 0.6);
-    width: 50%;
-    height: 500px;
+    width: fit-content;
+    height: fit-content;
     font-family: terraria, sans-serif;
     color: white;
     display: flex;
@@ -50,8 +50,11 @@
     justify-content: center;
     flex-direction: column-reverse; }
     .background div h1 {
-      font-size: 100px; }
+      font-size: 100px;
+      padding: 80px; }
     .background div p {
-      font-size: 50px; }
+      font-size: 50px;
+      text-align: center;
+      padding: 80px; }
 
 /*# sourceMappingURL=style.css.map */

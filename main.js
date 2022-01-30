@@ -38,10 +38,12 @@ function checkWeather(){
                 audioSource = 'music/neutral.mp3'
                 backgroundImg.style.backgroundImage  = 'url("img/none.png")'
             }
+
+            dataContainer.innerHTML += '<p>'+ 'Current Weather : ' + WeatherData.weather[0].description  +'</p>' + '<h1>'+ locationData.city +'</h1>'
+
         })
         timeToUpdate = locationData.timezone.current_time.split(":")
 
-        dataContainer.innerHTML += '<h1>'+ locationData.city +'</h1>' 
 
     })
 }
