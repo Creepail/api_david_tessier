@@ -14,7 +14,7 @@ async function checkWeather(){
     .then(locationData => { 
         locationInfo = locationData
 
-        fetch('http://api.openweathermap.org/data/2.5/weather?lat=' + locationData.latitude + '&lon=' + locationData.longitude +'&appid=1f841ee1973683bd7f799d206838eb20&units=metric')
+        fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + locationData.latitude + '&lon=' + locationData.longitude +'&appid=1f841ee1973683bd7f799d206838eb20&units=metric')
         .then(response => response.json())
         .then(WeatherData => {
             console.log(WeatherData)
@@ -125,7 +125,7 @@ function seeWorldEvil(){
     if(screenType == 0 ){
 
         
-    fetch('http://api.openweathermap.org/data/2.5/air_pollution?lat=' + locationInfo.latitude + '&lon=' + locationInfo.longitude +'&appid=1f841ee1973683bd7f799d206838eb20')
+    fetch('https://api.openweathermap.org/data/2.5/air_pollution?lat=' + locationInfo.latitude + '&lon=' + locationInfo.longitude +'&appid=1f841ee1973683bd7f799d206838eb20')
     .then(response => response.json())
     .then(polutionInfo => {
         audioSource = 'music/corruption.mp3'
